@@ -23,7 +23,6 @@ html {
     font-family: 'Poppins', sans-serif;
     font-size: 125%;
     color: $primaryFontColor;
-
 }
 
 body {
@@ -38,15 +37,6 @@ p {
     margin: 0;
 }
 
-.wrapper {
-    max-width: 300px;
-    background-color: $primaryColor;
-    padding: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
 //card styling//
 
 section {
@@ -57,18 +47,26 @@ section {
     align-items: center;
 }
 
+.wrapper {
+    max-width: 300px;
+    background-color: $primaryColor;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 .cardImage {
     position: relative;
+    .imgEquilibrium {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
 }
 
 .cardDescription h3 {
     padding-top: 1rem;
-}
-
-.imgEquilibrium {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
 }
 
 .line1 {
@@ -92,18 +90,15 @@ section {
     padding-bottom: 1rem;
     border-bottom: 0.5px solid $primaryFontColor;
     font-size: 0.6rem;
-}
-
-.ethStats p {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.65rem;
-    color: hsl(178, 100%, 50%);
-}
-
-.time {
-    font-size: 0.6rem;
-    font-weight: 400;
+    .ethStats p {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.65rem;
+    }
+    .time {
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
 }
 
 .ethStats,
@@ -123,19 +118,18 @@ section {
     padding: 0.75rem 0;
     font-weight: 400;
     font-size: 0.6rem;
-}
+    span {
+        font-weight: 500;
+        color: $secondaryFontColor;
+        cursor: pointer;
+    }
 
-span {
-    font-weight: 500;
-    color: $secondaryFontColor;
-    cursor: pointer;
-}
-
-.imgAvatar {
-    width: 30px;
-    border: 1px solid $secondaryFontColor;
-    border-radius: 15px;
-    margin-right: 0.5rem;
+    .imgAvatar {
+        width: 30px;
+        border: 1px solid $secondaryFontColor;
+        border-radius: 15px;
+        margin-right: 0.5rem;
+    }
 }
 
 //hover
@@ -160,7 +154,7 @@ span {
 }
 
 .wrapper:hover h3 {
-    color: $primaryColor;
+    color: $primaryHoverColor;
 }
 
 .wrapper:hover .line4 span{

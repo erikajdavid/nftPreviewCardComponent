@@ -242,6 +242,14 @@ p {
   margin: 0;
 }
 
+section {
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   max-width: 300px;
   background-color: hsl(216, 50%, 16%);
@@ -251,27 +259,18 @@ p {
   transition: 0.5s;
 }
 
-section {
-  background-color: hsl(217, 54%, 11%);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .cardImage {
   position: relative;
 }
-
-.cardDescription h3 {
-  padding-top: 1rem;
-}
-
-.imgEquilibrium {
+.cardImage .imgEquilibrium {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
+}
+
+.cardDescription h3 {
+  padding-top: 1rem;
 }
 
 .line1 {
@@ -295,15 +294,12 @@ section {
   border-bottom: 0.5px solid hsl(215, 51%, 70%);
   font-size: 0.6rem;
 }
-
-.ethStats p {
+.line3 .ethStats p {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.65rem;
-  color: hsl(178, 100%, 50%);
 }
-
-.time {
+.line3 .time {
   font-size: 0.6rem;
   font-weight: 400;
 }
@@ -326,14 +322,12 @@ section {
   font-weight: 400;
   font-size: 0.6rem;
 }
-
-span {
+.line4 span {
   font-weight: 500;
   color: white;
   cursor: pointer;
 }
-
-.imgAvatar {
+.line4 .imgAvatar {
   width: 30px;
   border: 1px solid white;
   border-radius: 15px;
@@ -359,7 +353,7 @@ span {
 }
 
 .wrapper:hover h3 {
-  color: hsl(216, 50%, 16%);
+  color: cyan;
 }
 
 .wrapper:hover .line4 span {
