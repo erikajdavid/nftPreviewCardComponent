@@ -252,7 +252,7 @@ p {
 }
 
 section {
-  background-color: hsl(217, 54%, 11%);
+  background-color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
